@@ -1,0 +1,65 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamolhon aka</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="Bqsim" style="display: flex; gap: 30px; font-size: 18px;">
+        <img src="{% static 'photo_2024-09-25_15-01-02.jpg' %}">
+        <p style="margin-top: 25px; font-size: 15px;">Департамент регистрации населения <br>
+            при Министерстве цифрового развития Кыргызской Республики</p>
+    </div>
+   
+    <table style="margin-left: 50px;">
+        <tr>
+            <td>Статус регистрации:  </td>
+            <td>{{i.deys}}</td>
+        </tr>
+        <tr>
+            <td>действительно:</td>
+            <td>{{i.raqami}}</td>
+        </tr>
+        <tr>
+            <td>Регистрация с: </td>
+            <td>{{i.yil}}</td>
+        </tr>
+        <tr>
+            <td>Регистрация по: </td>
+            <td>{{i.yil2}}</td>
+        </tr>
+        <tr>
+            <td>Номер паспорта: </td>
+            <td>{{i.raqami2}}</td>
+        </tr>
+        <tr>
+            <td>Страна паспорта: </td>
+            <td>{{i.stranasi}}</td>
+        </tr>
+        <tr>
+            <td>Фамилия: </td>
+            <td>{{i.f_qoshish}}</td>
+        </tr>
+        <tr>
+            <td>Имя: </td>
+            <td>{{i.l_qoshish}}</td>
+        </tr>
+        <tr>
+            <td>Отчество: </td>
+            <td>{{i.ochestva_qoshish}}</td>
+        </tr>
+        <tr>
+            <td>Дата рождения: </td>
+            <td>{{i.rojdeniya_qoshish}}</td>
+        </tr>
+        <tr>
+            <td>Адрес проживания: </td>
+            <td class="ddd">{{i.adres_qoshish}}</td>
+        </tr>
+    </table>
+    
+
+</html>
